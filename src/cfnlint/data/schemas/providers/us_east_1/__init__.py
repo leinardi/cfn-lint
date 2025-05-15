@@ -359,6 +359,7 @@ types: list[str] = [
     "AWS::DataSync::LocationObjectStorage",
     "AWS::DataSync::LocationS3",
     "AWS::DataSync::LocationSMB",
+    "AWS::DataSync::StorageSystem",
     "AWS::DataSync::Task",
     "AWS::DataZone::Connection",
     "AWS::DataZone::DataSource",

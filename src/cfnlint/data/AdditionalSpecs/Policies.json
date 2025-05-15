@@ -35518,8 +35518,10 @@
    },
    "createarchive": {
     "Resources": [
+     "alias",
      "archive",
-     "event-bus"
+     "event-bus",
+     "key"
     ]
    },
    "createconnection": {
@@ -35740,7 +35742,9 @@
    },
    "updatearchive": {
     "Resources": [
-     "archive"
+     "alias",
+     "archive",
+     "key"
     ]
    },
    "updateconnection": {
@@ -35760,6 +35764,11 @@
    }
   },
   "Resources": {
+   "alias": {
+    "ARNFormats": [
+     "arn:${Partition}:kms:${Region}:${Account}:alias/.*"
+    ]
+   },
    "api-destination": {
     "ARNFormats": [
      "arn:${Partition}:events:${Region}:${Account}:api-destination/.*"
@@ -35796,6 +35805,11 @@
    "event-source": {
     "ARNFormats": [
      "arn:${Partition}:events:${Region}::event-source/.*"
+    ]
+   },
+   "key": {
+    "ARNFormats": [
+     "arn:${Partition}:kms:${Region}:${Account}:key/.*"
     ]
    },
    "reboot-instance": {
